@@ -8,241 +8,507 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <nav class="liminal-margin" aria-label="Section navigation">
-        <div class="margin-line"></div>
-        <div class="margin-nodes">
-            <button class="margin-node" data-section="hero"><span class="node-label">Intro</span></button>
-            <button class="margin-node" data-section="narrative"><span class="node-label">About</span></button>
-            <button class="margin-node" data-section="milestones"><span class="node-label">Impact</span></button>
-            <button class="margin-node" data-section="creative"><span class="node-label">Works</span></button>
-            <button class="margin-node" data-section="leadership"><span class="node-label">Leadership</span></button>
-            <button class="margin-node" data-section="international"><span class="node-label">International</span></button>
-            <button class="margin-node" data-section="projects"><span class="node-label">Research</span></button>
-            <button class="margin-node" data-section="technical"><span class="node-label">Range</span></button>
-            <button class="margin-node" data-section="trajectory"><span class="node-label">Currently</span></button>
+    <!-- Main Navigation -->
+    <nav class="main-nav">
+        <div class="nav-container">
+            <button class="nav-logo" data-tab="home">Ayachi Samyal</button>
+            <div class="nav-tabs">
+                <button class="nav-tab active" data-tab="home">Home</button>
+                <button class="nav-tab" data-tab="por">POR</button>
+                <button class="nav-tab" data-tab="international">International</button>
+                <button class="nav-tab" data-tab="arts">Arts & Publications</button>
+                <button class="nav-tab" data-tab="technical">Technical & Research</button>
+                <button class="nav-tab" data-tab="competitions">Competitions</button>
+            </div>
         </div>
     </nav>
 
-    <section id="hero" class="hero-section" data-section="hero">
-        <div class="hero-name">
-            <h1>Ayachi Samyal</h1>
-            <p class="hero-descriptor">Published Author × Cultural Ambassador × Digital Creator</p>
-        </div>
-        <div class="hero-phrases">
-            <h2 class="rotating-phrase active">Comics × Code × Culture</h2>
-            <h2 class="rotating-phrase">India × Japan × Impact</h2>
-            <h2 class="rotating-phrase">Art × AI × Advocacy</h2>
-        </div>
-        <div class="scroll-indicator"><div class="scroll-line"></div></div>
-    </section>
-
-    <section id="narrative" class="narrative-section" data-section="narrative">
-        <div class="narrative-content">
-            <p class="narrative-text">At age 10, I became the youngest speaker at Sangrur Literary Festival as a published comic author. At 16, the Japanese government selected me as a <span class="accent">cultural ambassador</span> for a year-long immersion program. Today, I reach 400,000+ people monthly through digital platforms while conducting AI research on sustainable energy. My work has always existed at the intersection of <span class="accent">creative expression</span> and systematic inquiry—from selling 200+ copies of comics addressing child welfare to developing machine learning models for environmental analysis. What drives me: the conviction that the most urgent challenges require <span class="accent">multidisciplinary</span> minds willing to bridge art, technology, and cultural diplomacy.</p>
-        </div>
-    </section>
-
-    <section id="milestones" class="milestone-section" data-section="milestones">
-        <div class="milestone-content">
-            <div class="milestone-stat">
-                <div class="stat-number">400K+</div>
-                <div class="stat-label">Monthly reach across Pinterest platforms — photography, illustration, and aesthetic curation</div>
-            </div>
-            <div class="milestone-stat">
-                <div class="stat-number">1/21</div>
-                <div class="stat-label">Selected from India (out of 250 students across Asia) for Japanese Government's Asia Kakehashi scholarship at age 16</div>
-            </div>
-            <div class="milestone-stat">
-                <div class="stat-number">200+</div>
-                <div class="stat-label">Copies of self-published comic "Bub Dub" sold, with additional copies donated to Kailash Satyarthi Foundation</div>
-            </div>
-            <div class="milestone-stat">
-                <div class="stat-number">10</div>
-                <div class="stat-label">Years old when invited as youngest guest speaker at Sangrur Literary Festival</div>
+    <!-- HOME TAB -->
+    <section id="tab-home" class="tab-content active">
+        <!-- Hero -->
+        <div class="hero-home">
+            <h1 class="hero-title">Ayachi Samyal</h1>
+            <p class="hero-subtitle">Published Author × Cultural Ambassador × Digital Creator</p>
+            <div class="hero-taglines">
+                <span class="tagline">Comics × Code × Culture</span>
+                <span class="tagline">India × Japan × Impact</span>
+                <span class="tagline">Art × AI × Advocacy</span>
             </div>
         </div>
-    </section>
 
-    <section id="creative" class="creative-section" data-section="creative">
-        <h2 class="section-label">SELECTED WORKS & RECOGNITION</h2>
-        <div class="creative-grid">
-            <article class="creative-item has-image">
-                <div class="item-image"><img src="https://images.unsplash.com/photo-1618172193622-ae2d025f4032?w=800&h=600&fit=crop" alt="Digital content" loading="lazy"></div>
-                <p class="item-meta">Current / Digital Media</p>
-                <h3 class="item-title">Pinterest Creator — 400K+ Monthly Views</h3>
-                <p class="item-desc">Two active platforms: photography/aesthetics (300k+ views) and illustration/art (100k+ views)</p>
-            </article>
-            <article class="creative-item">
-                <p class="item-meta">2016 / Comics & Social Impact</p>
-                <h3 class="item-title">Bub Dub — 200+ Copies Sold</h3>
-                <p class="item-desc">Self-published comic addressing child labor. Commercial sales plus donation to Kailash Satyarthi Foundation</p>
-            </article>
-            <article class="creative-item">
-                <p class="item-meta">2015 / Publication & Speaking</p>
-                <h3 class="item-title">Youngest Speaker, Sangrur Literary Festival</h3>
-                <p class="item-desc">Guest speaker at age 10 following publication of debut comic "Sam Saira"</p>
-            </article>
-            <article class="creative-item has-image">
-                <div class="item-image"><img src="https://images.unsplash.com/photo-1579783902614-a3fb3927b6a5?w=800&h=600&fit=crop" alt="Art" loading="lazy"></div>
-                <p class="item-meta">2017 / Visual Art</p>
-                <h3 class="item-title">2nd Place — Inter-School Art Competition</h3>
-                <p class="item-desc">Drawing category, Chandigarh regional competition</p>
-            </article>
-            <article class="creative-item">
-                <p class="item-meta">2019 / Comics</p>
-                <h3 class="item-title">COAMIX Silent Manga Audition Competitor</h3>
-                <p class="item-desc">International manga competition judged by Japanese professional editors</p>
-            </article>
-            <article class="creative-item has-image">
-                <div class="item-image"><img src="https://images.unsplash.com/photo-1513364776144-60967b0f800f?w=800&h=600&fit=crop" alt="Comics" loading="lazy"></div>
-                <p class="item-meta">2017 / Publication</p>
-                <h3 class="item-title">Thoughts of a Dreamy Girl</h3>
-                <p class="item-desc">Published poetry collection</p>
-            </article>
-            <article class="creative-item">
-                <p class="item-meta">2025 / Visual Art</p>
-                <h3 class="item-title">Amity Inter-University Art Contest Winner</h3>
-                <p class="item-desc">First place university-wide</p>
-            </article>
-            <article class="creative-item">
-                <p class="item-meta">2024–25 / Social Impact</p>
-                <h3 class="item-title">NSS Contest Winner — Two Consecutive Years</h3>
-                <p class="item-desc">National Service Scheme recognition</p>
-            </article>
-            <article class="creative-item">
-                <p class="item-meta">2023 / Visual Art</p>
-                <h3 class="item-title">Amity's Got Talent Winner — Painting</h3>
-                <p class="item-desc">First place painting category</p>
-            </article>
-            <article class="creative-item">
-                <p class="item-meta">2019 / Visual Art</p>
-                <h3 class="item-title">National Art Competition Winner</h3>
-                <p class="item-desc">First place national-level</p>
-            </article>
-            <article class="creative-item">
-                <p class="item-meta">2018 / Robotics</p>
-                <h3 class="item-title">Inter-School Robotics Cup Winner</h3>
-                <p class="item-desc">First place robotics tournament</p>
-            </article>
+        <!-- Key Metrics -->
+        <div class="home-metrics">
+            <div class="metric-card" data-navigate="international">
+                <div class="metric-number">1/21</div>
+                <div class="metric-label">Selected from India for Japanese Govt scholarship at age 16</div>
+            </div>
+            <div class="metric-card" data-navigate="arts">
+                <div class="metric-number">400K+</div>
+                <div class="metric-label">Monthly reach across Pinterest platforms</div>
+            </div>
+            <div class="metric-card" data-navigate="arts">
+                <div class="metric-number">200+</div>
+                <div class="metric-label">Copies of self-published comic sold</div>
+            </div>
+            <div class="metric-card" data-navigate="arts">
+                <div class="metric-number">10</div>
+                <div class="metric-label">Years old when youngest speaker at literary festival</div>
+            </div>
         </div>
-    </section>
 
-    <section id="leadership" class="leadership-section" data-section="leadership">
-        <div class="timeline-container">
-            <svg class="timeline-line" viewBox="0 0 1200 2" preserveAspectRatio="none">
-                <line x1="0" y1="1" x2="1200" y2="1" stroke="#ffffff" stroke-width="1" />
-            </svg>
-            <div class="timeline-items">
-                <div class="timeline-item" style="left:5%">
-                    <div class="timeline-node"></div>
-                    <div class="timeline-content">
-                        <p class="timeline-year">2025–27</p>
-                        <h3 class="timeline-role">OECD Head — Pixel Club</h3>
-                        <p class="timeline-org">Lead technical programming for 200+ student events per semester. Partnership with Hack with India. Manage budgets and speaker acquisition.</p>
+        <!-- Discipline Highlights -->
+        <div class="home-highlights">
+            <div class="highlight-section" data-navigate="por">
+                <h2 class="highlight-title">Positions of Responsibility</h2>
+                <div class="highlight-items">
+                    <div class="highlight-card" data-navigate="por" data-section="oecd">
+                        <h3>OECD Head — Pixel Club</h3>
+                        <p>Leading 200+ student events per semester in partnership with Hack with India</p>
+                    </div>
+                    <div class="highlight-card" data-navigate="por" data-section="newsletter">
+                        <h3>University Newsletter Editor</h3>
+                        <p>Editorial leadership and content curation</p>
+                    </div>
+                    <div class="highlight-card" data-navigate="por" data-section="management">
+                        <h3>Management Head — AUP Malang</h3>
+                        <p>Operations and program management</p>
                     </div>
                 </div>
-                <div class="timeline-item" style="left:35%">
-                    <div class="timeline-node"></div>
-                    <div class="timeline-content">
-                        <p class="timeline-year">2026–27</p>
-                        <h3 class="timeline-role">Management Head</h3>
-                        <p class="timeline-org">AUP Malang Dance Club</p>
+            </div>
+
+            <div class="highlight-section" data-navigate="international">
+                <h2 class="highlight-title">International Exposure</h2>
+                <div class="highlight-items">
+                    <div class="highlight-card" data-navigate="international">
+                        <h3>Asia Kakehashi Project Scholar, 2021</h3>
+                        <p>Full-year cultural ambassadorship in Japan — Yokohama Hiranuma High School</p>
                     </div>
                 </div>
-                <div class="timeline-item" style="left:62%">
-                    <div class="timeline-node"></div>
-                    <div class="timeline-content">
-                        <p class="timeline-year">Current</p>
-                        <h3 class="timeline-role">Library Club Panelist</h3>
-                        <p class="timeline-org">AUP Campus Literary Initiative</p>
+            </div>
+
+            <div class="highlight-section" data-navigate="arts">
+                <h2 class="highlight-title">Arts & Publications</h2>
+                <div class="highlight-items">
+                    <div class="highlight-card" data-navigate="arts" data-section="publications">
+                        <h3>Published Comics & Poetry</h3>
+                        <p>Sam Saira (2015) · Bub Dub (2016, 200+ sold) · Thoughts of a Dreamy Girl (2017)</p>
+                    </div>
+                    <div class="highlight-card" data-navigate="arts" data-section="digital">
+                        <h3>Pinterest Creator — 400K+ Monthly Views</h3>
+                        <p>Two platforms: illustration (100k+) and photography/aesthetics (300k+)</p>
+                    </div>
+                    <div class="highlight-card" data-navigate="arts" data-section="speaking">
+                        <h3>Youngest Speaker — Sangrur Literary Festival</h3>
+                        <p>Age 10, following publication of debut comic</p>
                     </div>
                 </div>
-                <div class="timeline-item" style="left:88%">
-                    <div class="timeline-node"></div>
-                    <div class="timeline-content">
-                        <p class="timeline-year">Current</p>
-                        <h3 class="timeline-role">Manga Artist</h3>
-                        <p class="timeline-org">Original series in development</p>
+            </div>
+
+            <div class="highlight-section" data-navigate="technical">
+                <h2 class="highlight-title">Technical & Research</h2>
+                <div class="highlight-items">
+                    <div class="highlight-card" data-navigate="technical" data-section="research">
+                        <h3>ML Research — C-DAC Mohali</h3>
+                        <p>Water quality prediction internship at government research institution</p>
+                    </div>
+                    <div class="highlight-card" data-navigate="technical" data-section="research">
+                        <h3>Environmental AI Research</h3>
+                        <p>Diatom analysis for alternative fuel under Dr. Sarika Grover</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="highlight-section" data-navigate="competitions">
+                <h2 class="highlight-title">Competitions & Academic Distinction</h2>
+                <div class="highlight-items">
+                    <div class="highlight-card" data-navigate="competitions">
+                        <h3>International Rank 23 — Science Olympiad</h3>
+                        <p>Global competitive performance</p>
+                    </div>
+                    <div class="highlight-card" data-navigate="competitions">
+                        <h3>Zonal Rank 4 — Science Olympiad</h3>
+                        <p>Regional excellence</p>
+                    </div>
+                    <div class="highlight-card" data-navigate="competitions">
+                        <h3>Multiple National Art & Robotics Wins</h3>
+                        <p>Sustained competitive performance since childhood</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="international" class="international-section" data-section="international">
-        <div class="international-content">
-            <blockquote class="international-quote">Asia Kakehashi Project Scholar, 2021</blockquote>
-            <p class="international-subhead">Age 16 — One of 21 from India, 250 across Asia</p>
-            <div class="international-text">
-                <div class="text-column">
-                    <p>Selected by the Japanese government for a fully-funded, year-long cultural ambassadorship program with stipend. Completed full academic year at Yokohama Hiranuma High School, embedded in the Japanese education system.</p>
-                    <p>Trained in kyuudo (Japanese archery), traditional calligraphy, stamp carving, and tea ceremony while competing in basketball, badminton, and annual marathon. Scored 2nd highest in school-wide English examination.</p>
+    <!-- POR TAB -->
+    <section id="tab-por" class="tab-content tab-discipline">
+        <div class="discipline-header">
+            <h1 class="discipline-title">Positions of Responsibility</h1>
+            <p class="discipline-intro">Leadership roles spanning technical events, editorial direction, and program management — demonstrating operational capacity at institutional scale.</p>
+        </div>
+
+        <div class="discipline-content">
+            <!-- OECD Head Section -->
+            <div class="por-section" id="por-oecd">
+                <h2 class="por-section-title">OECD Head — Pixel Club (2025–27)</h2>
+                <div class="por-details">
+                    <p class="por-description">Lead technical programming and operations for university's premier coding and technology club. Partner with Hack with India for national-level initiatives.</p>
+                    
+                    <div class="por-stats">
+                        <div class="stat-item">
+                            <span class="stat-label">Events per Semester</span>
+                            <span class="stat-value">6-7</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-label">Avg. Attendance</span>
+                            <span class="stat-value">200+</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-label">Budget Management</span>
+                            <span class="stat-value">Full Financial Authority</span>
+                        </div>
+                    </div>
+
+                    <div class="por-responsibilities">
+                        <h3>Key Responsibilities</h3>
+                        <ul>
+                            <li>Event conceptualization, budgeting, and execution</li>
+                            <li>Speaker acquisition and coordination (US tech founders, government forensic officers, corporate VPs)</li>
+                            <li>Partnership management with national tech initiatives</li>
+                            <li>Team leadership and resource allocation</li>
+                        </ul>
+                    </div>
+
+                    <button class="expandable-trigger" data-target="oecd-events">View Events & Reports ↓</button>
+                    
+                    <div class="expandable-content" id="oecd-events">
+                        <div class="event-grid">
+                            <div class="event-card">
+                                <h4>Cybersecurity Hands-On Workshop</h4>
+                                <p>Industry expert-led practical session on penetration testing and security protocols. 250+ participants.</p>
+                                <a href="#report-placeholder" class="event-link">View Report →</a>
+                            </div>
+                            <div class="event-card">
+                                <h4>TED-Style Tech Talk Series</h4>
+                                <p>Multi-speaker panel featuring US company founder, police forensic specialist, and corporate VP on technology's societal impact.</p>
+                                <a href="#report-placeholder" class="event-link">View Report →</a>
+                            </div>
+                            <div class="event-card">
+                                <h4>Inter-University Hackathon</h4>
+                                <p>48-hour coding competition with 180 participants across 5 universities. Sponsored event with industry mentors.</p>
+                                <a href="#report-placeholder" class="event-link">View Report →</a>
+                            </div>
+                            <div class="event-card">
+                                <h4>Tech Treasure Hunt</h4>
+                                <p>Campus-wide technical puzzle competition combining coding challenges with physical problem-solving.</p>
+                                <a href="#report-placeholder" class="event-link">View Report →</a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="text-column">
-                    <p>This wasn't cultural tourism—it was cultural immersion at operational depth. Living with a host family, attending classes in Japanese, practicing martial arts rooted in Zen philosophy, and navigating a foreign education system at 16 developed cross-cultural fluency that can't be taught in classrooms.</p>
-                    <p>The experience fundamentally shaped my understanding of international relations: that genuine diplomatic capability emerges from lived experience in foreign systems, not theoretical study of them.</p>
+            </div>
+
+            <!-- Newsletter Editor -->
+            <div class="por-section" id="por-newsletter">
+                <h2 class="por-section-title">University Newsletter Editor (Current)</h2>
+                <div class="por-details">
+                    <p class="por-description">Editorial leadership for campus-wide publication. Responsible for content curation, contributor coordination, and editorial direction ensuring quality and relevance across diverse campus voices.</p>
                 </div>
             </div>
-            <div class="image-strip">
-                <img src="https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?w=600&h=200&fit=crop" alt="Yokohama" loading="lazy">
-                <img src="https://images.unsplash.com/photo-1528164344705-47542687000d?w=600&h=200&fit=crop" alt="Culture" loading="lazy">
-                <img src="https://images.unsplash.com/photo-1542051841857-5f90071e7989?w=600&h=200&fit=crop" alt="Collaboration" loading="lazy">
+
+            <!-- Management Head -->
+            <div class="por-section" id="por-management">
+                <h2 class="por-section-title">Management Head — AUP Malang Dance Club (2026–27)</h2>
+                <div class="por-details">
+                    <p class="por-description">Operations and program management for university cultural organization. Event planning, resource allocation, and team coordination.</p>
+                </div>
+            </div>
+
+            <!-- Library Club -->
+            <div class="por-section" id="por-library">
+                <h2 class="por-section-title">Library Club Panelist (Current)</h2>
+                <div class="por-details">
+                    <p class="por-description">Contributing member of campus literary initiative. Participate in book discussions, author talks, and reading program development.</p>
+                </div>
             </div>
         </div>
     </section>
 
-    <section id="projects" class="projects-section" data-section="projects">
-        <h2 class="section-label">CURRENT RESEARCH & TECHNICAL WORK</h2>
-        <div class="projects-grid">
-            <article class="project-item">
-                <p class="project-status">Undergraduate Research</p>
-                <h3 class="item-title">AI-Driven Diatom Analysis for Alternative Fuel</h3>
-                <p class="item-desc">Research volunteer under Dr. Sarika Grover (Environmental Sciences), applying ML to sustainable energy research.</p>
-            </article>
-            <article class="project-item">
-                <p class="project-status">Completed — CDAC Mohali</p>
-                <h3 class="item-title">Water Quality Prediction System</h3>
-                <p class="item-desc">ML internship at government research institution. Developed predictive model for water quality analysis.</p>
-            </article>
-            <article class="project-item">
-                <p class="project-status">In Development</p>
-                <h3 class="item-title">Pinterest SEO Generator</h3>
-                <p class="item-desc">Automated SEO tool for content creators, leveraging 400k+ monthly views experience.</p>
-            </article>
+    <!-- INTERNATIONAL TAB -->
+    <section id="tab-international" class="tab-content tab-discipline">
+        <div class="discipline-header">
+            <h1 class="discipline-title">International Exposure</h1>
+            <p class="discipline-intro">Government-selected cultural ambassador representing India in year-long immersion program.</p>
+        </div>
+
+        <div class="discipline-content">
+            <div class="international-main">
+                <h2 class="program-title">Asia Kakehashi Project Scholar, 2021</h2>
+                <p class="program-subhead">Age 16 — One of 21 from India, 250 across Asia</p>
+
+                <div class="program-details">
+                    <div class="detail-block">
+                        <h3>Selection & Program</h3>
+                        <p>Selected by the Japanese government for a fully-funded, year-long cultural ambassadorship program with stipend. Competed against thousands of Indian applicants for one of 21 spots representing the country.</p>
+                    </div>
+
+                    <div class="detail-block">
+                        <h3>Academic Placement</h3>
+                        <p>Completed full academic year at Yokohama Hiranuma High School. Not an exchange observer — fully embedded in Japanese education system, attending classes in Japanese, competing academically in second-language environment.</p>
+                        <p><strong>Academic Achievement:</strong> Scored 2nd highest in school-wide English examination among all students.</p>
+                    </div>
+
+                    <div class="detail-block">
+                        <h3>Cultural Immersion</h3>
+                        <ul>
+                            <li><strong>Kyuudo (Japanese Archery):</strong> Traditional martial art rooted in Zen philosophy</li>
+                            <li><strong>Tea Ceremony:</strong> Formal ceremonial practice requiring technical mastery</li>
+                            <li><strong>Calligraphy & Stamp Carving:</strong> Traditional art forms practiced at intermediate level</li>
+                            <li><strong>Athletics:</strong> Basketball, badminton, annual marathon training as regular student activities</li>
+                        </ul>
+                    </div>
+
+                    <div class="detail-block">
+                        <h3>Impact & Takeaway</h3>
+                        <p>This wasn't cultural tourism — it was operational-depth immersion. Living with a host family, navigating a foreign education system, practicing martial arts, and performing academically in Japanese at age 16 developed cross-cultural fluency that cannot be taught theoretically.</p>
+                        <p>The experience fundamentally shaped my understanding of international relations: genuine diplomatic capability emerges from lived experience in foreign systems, not academic study of them.</p>
+                    </div>
+
+                    <div class="blog-cta">
+                        <a href="#blog-placeholder" class="blog-link">Read Full Japan Experience Blog →</a>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
-    <section id="technical" class="technical-section" data-section="technical">
-        <div class="technical-grid">
-            <div class="technical-column">
-                <h3 class="technical-heading">Creative Tools</h3>
-                <p class="technical-list"><span class="accent">Traditional Ink Nib Pens</span> – Micron Pens – Mixed Media – Figma – Photography</p>
+    <!-- ARTS TAB -->
+    <section id="tab-arts" class="tab-content tab-discipline">
+        <div class="discipline-header">
+            <h1 class="discipline-title">Arts & Publications</h1>
+            <p class="discipline-intro">Published author since age 10, digital creator with 400k+ monthly reach, competitive artist across multiple mediums.</p>
+        </div>
+
+        <div class="discipline-content">
+            <div class="arts-section" id="arts-publications">
+                <h2 class="arts-section-title">Publications</h2>
+                <div class="publication-grid">
+                    <div class="publication-item">
+                        <span class="pub-year">2016</span>
+                        <h3>Bub Dub</h3>
+                        <p>Self-published comic addressing child labor. <strong>200+ copies sold commercially</strong>, with additional copies donated to Kailash Satyarthi Foundation.</p>
+                    </div>
+                    <div class="publication-item">
+                        <span class="pub-year">2017</span>
+                        <h3>Thoughts of a Dreamy Girl</h3>
+                        <p>Published poetry collection exploring identity and creative consciousness.</p>
+                    </div>
+                    <div class="publication-item">
+                        <span class="pub-year">2015</span>
+                        <h3>Sam Saira</h3>
+                        <p>Debut comic. Led to invitation as youngest speaker at Sangrur Literary Festival at age 10.</p>
+                    </div>
+                    <div class="publication-item">
+                        <span class="pub-year">In Progress</span>
+                        <h3>Original Manga Series</h3>
+                        <p>Long-form sequential narrative combining traditional ink techniques with contemporary storytelling. Competed in COAMIX Silent Manga Audition (international professional competition).</p>
+                    </div>
+                </div>
             </div>
-            <div class="technical-column">
-                <h3 class="technical-heading">Development & Research</h3>
-                <p class="technical-list">Python – C/C++ – Java – JavaScript – HTML/CSS – <span class="accent">Machine Learning</span> – Git</p>
+
+            <div class="arts-section" id="arts-digital">
+                <h2 class="arts-section-title">Digital Reach</h2>
+                <div class="digital-stats">
+                    <div class="digital-platform">
+                        <h3>Pinterest — Illustration Account</h3>
+                        <div class="platform-metric">100,000+ monthly views</div>
+                        <p>Original art, comics, and illustration content driving consistent audience engagement.</p>
+                    </div>
+                    <div class="digital-platform">
+                        <h3>Pinterest — Photography & Aesthetics</h3>
+                        <div class="platform-metric">300,000+ monthly views</div>
+                        <p>Curated photography and aesthetic content with proven algorithmic understanding.</p>
+                    </div>
+                </div>
+                <p class="digital-note"><strong>Combined reach: 400,000+ monthly impressions</strong> across two independently successful platforms, demonstrating content strategy capability and platform fluency.</p>
             </div>
-            <div class="technical-column">
-                <h3 class="technical-heading">Languages</h3>
-                <p class="technical-list">English (Native) – Hindi (Native) – Punjabi (Native) – <span class="accent">Japanese (N4)</span> – French (Elementary)</p>
+
+            <div class="arts-section" id="arts-speaking">
+                <h2 class="arts-section-title">Theatre & Public Speaking</h2>
+                <div class="speaking-items">
+                    <div class="speaking-item">
+                        <h3>Youngest Speaker — Sangrur Literary Festival (2015)</h3>
+                        <p>Invited as guest speaker at age 10 following publication of debut comic. Youngest speaker in festival history.</p>
+                    </div>
+                    <div class="speaking-item">
+                        <h3>2nd Place — Inter-School Art Competition (2017)</h3>
+                        <p>Drawing category, Chandigarh regional competition.</p>
+                    </div>
+                    <div class="speaking-item">
+                        <h3>National & University Recognition</h3>
+                        <p>Multiple wins: Amity Inter-University Art Contest (2025), NSS Contest (2024-25, consecutive years), Amity's Got Talent Painting (2023), National Art Competition (2019).</p>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
-    <section id="trajectory" class="trajectory-section" data-section="trajectory">
-        <div class="trajectory-content">
-            <h2 class="trajectory-heading">Currently</h2>
-            <p class="trajectory-text">Conducting AI/ML research on sustainable energy while completing final year BTech. Building digital platforms with 400,000+ monthly reach. Seeking opportunities in <span class="accent">international relations</span>, cultural diplomacy, and cross-border initiatives that value multidisciplinary thinking. Based in Chandigarh, available globally.</p>
-            <div class="trajectory-links">
-                <a href="mailto:samyalayachi@gmail.com" class="accent-link">samyalayachi@gmail.com</a>
-                <a href="https://linkedin.com/in/ayachisamyal" class="accent-link" target="_blank">LinkedIn</a>
+    <!-- TECHNICAL TAB -->
+    <section id="tab-technical" class="tab-content tab-discipline">
+        <div class="discipline-header">
+            <h1 class="discipline-title">Technical & Research</h1>
+            <p class="discipline-intro">Machine learning research at government institutions, environmental AI applications, and technical project development.</p>
+        </div>
+
+        <div class="discipline-content">
+            <div class="tech-section" id="tech-research">
+                <h2 class="tech-section-title">Research Experience</h2>
+                
+                <div class="research-item">
+                    <h3>Water Quality Prediction — ML Internship</h3>
+                    <span class="research-org">Centre for Development of Advanced Computing (C-DAC Mohali)</span>
+                    <p>Developed predictive machine learning model for water quality analysis at premier government research institution. Combined environmental data collection with computational methods for deployed analysis system.</p>
+                    <div class="research-tech">Python · Machine Learning · Environmental Data Analysis</div>
+                </div>
+
+                <div class="research-item">
+                    <h3>Diatom-Based Alternative Fuel Research</h3>
+                    <span class="research-org">Under Dr. Sarika Grover, Environmental Sciences</span>
+                    <p>Applying AI/ML techniques to diatom analysis for sustainable energy research. Data sourcing from ResearchGate, preprocessing, spatial mapping, and area integration. Transitioning from research volunteer to formal internship.</p>
+                    <div class="research-tech">Machine Learning · Data Engineering · GIS · ResearchGate</div>
+                </div>
+
+                <div class="research-item">
+                    <h3>Machine Learning Research — New Opportunity</h3>
+                    <span class="research-org">Academic Collaboration (In Discussion)</span>
+                    <p>Exploring advanced ML applications in environmental modeling and predictive systems. Focus on scalable computational approaches to sustainability challenges.</p>
+                    <div class="research-tech">Deep Learning · Neural Networks · Environmental Modeling</div>
+                </div>
+
+                <div class="research-item">
+                    <h3>Interdisciplinary Research Opportunity</h3>
+                    <span class="research-org">Cross-Department Initiative (Pending)</span>
+                    <p>Investigating intersection of computational methods and social impact measurement. Early-stage exploration of data-driven approaches to community development metrics.</p>
+                    <div class="research-tech">Data Science · Social Impact Analysis · Statistical Methods</div>
+                </div>
+            </div>
+
+            <div class="tech-section" id="tech-projects">
+                <h2 class="tech-section-title">Technical Projects</h2>
+                
+                <div class="project-item">
+                    <div class="project-header">
+                        <h3>Pinterest SEO Generator</h3>
+                        <span class="project-status">In Development</span>
+                    </div>
+                    <p>Automated SEO optimization tool for Pinterest content creators. Leveraging 400k+ monthly views experience to build algorithmic understanding into practical tooling.</p>
+                    <div class="project-tech">JavaScript · Pinterest API · SEO Optimization</div>
+                </div>
+
+                <div class="project-item">
+                    <div class="project-header">
+                        <h3>Productivity Tracking System</h3>
+                        <span class="project-status">Prototype Stage</span>
+                    </div>
+                    <p>Creative-technical hybrid project exploring visual systems for personal productivity logging. Combines interface design with behavioral insight.</p>
+                    <div class="project-tech">UI/UX Design · Data Visualization · Behavioral Tracking</div>
+                </div>
+            </div>
+
+            <div class="tech-section" id="tech-skills">
+                <h2 class="tech-section-title">Technical Capabilities</h2>
+                <div class="skills-grid">
+                    <div class="skill-category">
+                        <h4>Development</h4>
+                        <p>Python · C/C++ · Java · JavaScript · HTML/CSS · Git</p>
+                    </div>
+                    <div class="skill-category">
+                        <h4>Machine Learning & Data</h4>
+                        <p>ML Frameworks · Data Analysis · Statistical Methods · ResearchGate · GIS Mapping</p>
+                    </div>
+                    <div class="skill-category">
+                        <h4>Creative Tools</h4>
+                        <p>Traditional Ink Pens · Micron Pens · Mixed Media · Figma · Digital Illustration · Photography</p>
+                    </div>
+                    <div class="skill-category">
+                        <h4>Languages</h4>
+                        <p>English (Native) · Hindi (Native) · Punjabi (Native) · Japanese (N4) · French (Elementary)</p>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
+    <!-- COMPETITIONS TAB -->
+    <section id="tab-competitions" class="tab-content tab-discipline">
+        <div class="discipline-header">
+            <h1 class="discipline-title">Competitions & Academic Distinction</h1>
+            <p class="discipline-intro">Sustained competitive performance since childhood across academic olympiads, robotics, and visual arts.</p>
+        </div>
+
+        <div class="discipline-content">
+            <div class="comp-section">
+                <h2 class="comp-section-title">Academic Olympiads</h2>
+                <div class="comp-grid">
+                    <div class="comp-item highlight">
+                        <h3>International Rank 23</h3>
+                        <p class="comp-event">Science Olympiad</p>
+                        <p>Global competitive performance demonstrating analytical capability at international scale.</p>
+                    </div>
+                    <div class="comp-item highlight">
+                        <h3>Zonal Rank 4</h3>
+                        <p class="comp-event">Science Olympiad</p>
+                        <p>Regional excellence in competitive science examination.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="comp-section">
+                <h2 class="comp-section-title">Robotics & Technical</h2>
+                <div class="comp-grid">
+                    <div class="comp-item">
+                        <h3>1st Place</h3>
+                        <p class="comp-event">Inter-School Robotics Cup (2018)</p>
+                        <p>Competitive robotics tournament win.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="comp-section">
+                <h2 class="comp-section-title">Visual Arts</h2>
+                <div class="comp-grid">
+                    <div class="comp-item">
+                        <h3>1st Place</h3>
+                        <p class="comp-event">National Art Competition (2019)</p>
+                        <p>National-level visual arts competition.</p>
+                    </div>
+                    <div class="comp-item">
+                        <h3>1st Place</h3>
+                        <p class="comp-event">Amity Inter-University Art Contest (2025)</p>
+                        <p>University-wide visual arts competition.</p>
+                    </div>
+                    <div class="comp-item">
+                        <h3>1st Place</h3>
+                        <p class="comp-event">Amity's Got Talent — Painting (2023)</p>
+                        <p>University talent showcase painting category.</p>
+                    </div>
+                    <div class="comp-item">
+                        <h3>Winner</h3>
+                        <p class="comp-event">NSS Contest (2024, 2025)</p>
+                        <p>National Service Scheme recognition, consecutive years.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Footer -->
     <footer class="site-footer">
-        <p class="footer-text">Published author since 2015 — Cultural ambassador since 2021 — Chandigarh, India</p>
-        <button class="back-to-top">Back to top</button>
+        <div class="footer-content">
+            <div class="footer-text">Published author since 2015 — Cultural ambassador since 2021 — Chandigarh, India</div>
+            <div class="footer-links">
+                <a href="mailto:samyalayachi@gmail.com" class="footer-link">samyalayachi@gmail.com</a>
+                <a href="https://linkedin.com/in/ayachisamyal" class="footer-link" target="_blank">LinkedIn</a>
+            </div>
+        </div>
     </footer>
 
     <script src="script.js"></script>
